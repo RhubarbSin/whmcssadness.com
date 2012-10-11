@@ -47,6 +47,9 @@
 ***** /Basic cPanel & WHM Setup/
       - /Add an A entry/ for this nameserver adds a whole zone for each nameserver
 *** Outright bugs
+**** Account Functions
+     - /Create a New Account/
+       - Form displays a green check mark when "Username" is set to *test*, but the account creation fails with the message "Sorry, that username is reserved."
 **** DNS Functions
      - /Nameserver IPs/
        - Wrong IP addresses displayed after changes (eventually becomes correct)
