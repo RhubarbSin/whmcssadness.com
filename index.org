@@ -1,0 +1,73 @@
+#+STYLE: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+#+BEGIN_CENTER
+[[file:Construction-03-june.gif]]
+#+END_CENTER
+#+BEGIN_CENTER
+*We're just getting started!*
+#+END_CENTER
+* The Big Picture
+  [[file:eyes.gif]]
+** Categories of Sadness
+   - Misspellings, improper punctuation
+   - Poor design: haphazard organization, bizarre implementation, missing features
+   - Outright bugs
+** Infamous Quotes
+   - "It's easy!"
+   - "It does everything for you!"
+   - "It's just one click!"
+   - "It installs itself!"
+* On-line Support
+  #+begin_html
+  <applet code="Eliza/Eliza.class" width="600" height="200">
+  <param name="script" value="http://whmcssadness.com/Eliza/script">
+  </applet> 
+  <img src="demon.gif" align="bottom">
+  #+end_html
+* The Sadness /(eventually on separate pages)/ [[file:skull.gif]]
+** WHMCS /(much expansion expected here)/
+   - Free domains aren't displayed as free when ordering
+   - IP addresses on cPanel hosts have to be specified (not automatically detected)
+   - Not "complete solution": plugins/addons/modules necessary
+   - Changing a domain registration's nameservers updates the registration at the registrar but not the NS resource records in WHM
+** WHM
+*** Misspellings
+**** Networking Setup
+     - /Resolver Configuration/: "Teritary Resolver"
+*** Missing features
+    - Ability to clone/migrate configuration/settings to another instance (besides account backup/migration)
+*** Haphazard organization
+    - /Park a Domain/ is under /DNS Functions/ whereas /List Parked Domains/ is under /Account Information/
+    - /Modify an Account/ vs. /Password Modification/
+    - /Modify an Account/ vs. /Quota Modification/
+*** Bizarre implementation
+**** DNS Functions
+     - /Add a DNS Zone/
+       - .arpa zones have A, MX, and CNAME RRs
+**** Server Configuration
+***** /Basic cPanel & WHM Setup/
+      - /Add an A entry/ for this nameserver adds a whole zone for each nameserver
+*** Outright bugs
+**** DNS Functions
+     - /Nameserver IPs/
+       - Wrong IP addresses displayed after changes (eventually becomes correct)
+       - Incorrect list of zones vs. /Edit DNS Zone/
+**** Backup
+     - /Configure Backup/
+       - "Remount/Unmount Backup Drive" doesn't always unmount after backup
+#+BEGIN_CENTER
+[[file:barrier.gif]]
+#+END_CENTER
+#+TITLE:     (whmcs | cpanel)sadness.com
+#+AUTHOR:    A. Sad Man
+#+DATE:      2012-10-03 Wed
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
